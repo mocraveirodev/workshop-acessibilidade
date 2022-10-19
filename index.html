@@ -9,25 +9,25 @@
     </head>
     <body>
         <div class="tabs">
-            <ul class="tabs__group">
-                <li class="tabs__tab js-tab is-active" data-content="1" id="tab-1" tabindex="0">
+            <ul class="tabs__group" role="tablist" aria-label="Lista de abas">
+                <li class="tabs__tab js-tab is-active" data-content="1" id="tab-1" tabindex="0" role="tab" aria-controls="tab-content-1" aria-selected="true">
                     Tab 1
                 </li>
-                <li class="tabs__tab js-tab" data-content="2" id="tab-2" tabindex="0">
+                <li class="tabs__tab js-tab" data-content="2" id="tab-2" tabindex="-1" role="tab" aria-controls="tab-content-2" aria-selected="false">
                     Tab 2
                 </li>
-                <li class="tabs__tab js-tab" data-content="3" id="tab-3" tabindex="0">
+                <li class="tabs__tab js-tab" data-content="3" id="tab-3" tabindex="-1" role="tab" aria-controls="tab-content-3" aria-selected="false">
                     Tab 3
                 </li>
             </ul>
             <div class="tabs__panel">
-                <div class="tabs__content js-tab-content is-visible" id="tab-content-1">
+                <div class="tabs__content js-tab-content is-visible" id="tab-content-1" role="tabpanel" aria-labelledby="tab-1">
                     Conteudo 1
                 </div>
-                <div class="tabs__content js-tab-content" id="tab-content-2">
+                <div class="tabs__content js-tab-content" id="tab-content-2" role="tabpanel" aria-labelledby="tab-2">
                     Conteudo 2
                 </div>
-                <div class="tabs__content js-tab-content" id="tab-content-3">
+                <div class="tabs__content js-tab-content" id="tab-content-3" role="tabpanel" aria-labelledby="tab-3">
                     Conteudo 3
                 </div>
             </div>
@@ -35,3 +35,4 @@
         <script src="./script.js"></script>
     </body>
 </html>
+    
