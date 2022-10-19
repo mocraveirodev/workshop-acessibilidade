@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: sans-serif;
+    padding: 3rem;
+    font-size: 3rem;
+}
+
+.tabs__group {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs__tab {
+    list-style: none;
+    background-color:#323640;
+    color: white;
+    flex: 1;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+.tabs__tab.is-active {
+    background-color: #044B63;
+}
+
+.tabs__tab:focus,
+.tabs__tab:hover {
+    background-color: #D50037;
+}
+
+.tabs__tab:focus {
+    outline: none;
+}
+
+.tabs__tab:hover {
+    cursor: pointer;
+}
+
+.tabs__content {
+    display: none;
+    padding: 1rem;
+}
+
+.tabs__content.is-visible {
+    display: block;
+}

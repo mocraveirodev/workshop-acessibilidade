@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workshop Acessibilidade na Web - PHP22</title>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="tabs">
+            <ul class="tabs__group">
+                <li class="tabs__tab js-tab is-active" data-content="1" id="tab-1" tabindex="0">
+                    Tab 1
+                </li>
+                <li class="tabs__tab js-tab" data-content="2" id="tab-2" tabindex="0">
+                    Tab 2
+                </li>
+                <li class="tabs__tab js-tab" data-content="3" id="tab-3" tabindex="0">
+                    Tab 3
+                </li>
+            </ul>
+            <div class="tabs__panel">
+                <div class="tabs__content js-tab-content is-visible" id="tab-content-1">
+                    Conteudo 1
+                </div>
+                <div class="tabs__content js-tab-content" id="tab-content-2">
+                    Conteudo 2
+                </div>
+                <div class="tabs__content js-tab-content" id="tab-content-3">
+                    Conteudo 3
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
